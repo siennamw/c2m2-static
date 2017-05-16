@@ -16,16 +16,17 @@ var gulp = require('gulp'),
 
 /* Build
  * -----------------------------------*/
-gulp.task('build', ['nunjucks', 'ext404', 'copyFonts', 'copyCSS', 'copyJS', 'copyPHP', 'copyImages', 'copyScores']);
-// also make this the default
-gulp.task('default', ['build']);
+gulp.task('build', ['nunjucks', 'ext404', 'copyCSS', 'copyJS', 'copyPHP', 'copyImages']);
+
+// default task is serve (which also executes build)
+gulp.task('default', ['serve']);
 
 /* Nunjucks
  * -----------------------------------*/
 gulp.task('nunjucks', function () {
     // Gets .html, .shtml, and .nunjucks files in sources/content
     return gulp.src('./sources/content/**/*.+(html|shtml|nunjucks)')
-    // Renders template with nunjucks
+        // Renders template with nunjucks
         .pipe(nunjucksRender({
             path: ['./sources/templates']
         }))
@@ -45,18 +46,10 @@ gulp.task('ext404', ['nunjucks'], function () {
     ]);
 });
 
-/* Copy Font-Awesome Fonts to build
- * -----------------------------------*/
-gulp.task('copyFonts', function () {
-    gulp.src('./node_modules/font-awesome/fonts/*')
-        .pipe(gulp.dest('./build/fonts')
-    );
-});
-
 /* Compile LESS to sources
  * -----------------------------------*/
 gulp.task('less', function () {
-    return gulp.src('./sources/css/*.+(less|css)')
+    return gulp.src('./sources/css/style.less')
         .pipe(less({
             paths: [gpath.join(__dirname, 'less', 'includes')]
         }))
@@ -67,7 +60,7 @@ gulp.task('less', function () {
 /* Copy CSS to build
  * -----------------------------------*/
 gulp.task('copyCSS', ['less'], function () {
-    gulp.src('./sources/css/mcc_styles.css')
+    gulp.src('./sources/css/style.css')
         .pipe(gulp.dest('./build/css')
     );
 });
@@ -75,8 +68,7 @@ gulp.task('copyCSS', ['less'], function () {
 /* Copy JS to build
  * -----------------------------------*/
 gulp.task('copyJS', function () {
-    gulp.src(['./sources/js/mcc_scripts.js',
-        './sources/sienna-boilerplate/sienna-boilerplate.js'])
+    gulp.src(['./sources/js/*'])
         .pipe(gulp.dest('./build/js')
     );
 });
@@ -84,7 +76,7 @@ gulp.task('copyJS', function () {
 /* Copy PHP to build
  * -----------------------------------*/
 gulp.task('copyPHP', function () {
-    gulp.src('./sources/php/mail.php')
+    gulp.src('./sources/php/*')
         .pipe(gulp.dest('./build/php')
         );
 });
@@ -97,14 +89,6 @@ gulp.task('copyImages', ['less'], function () {
     );
 });
 
-/* Copy scores to build
- * -----------------------------------*/
-gulp.task('copyScores', function () {
-    gulp.src('./sources/scores/**/*')
-        .pipe(gulp.dest('./build/scores')
-    );
-});
-
 /* Local Server
  * ---------------------------------- */
 gulp.task('serve', ['build'], function () {
@@ -112,10 +96,6 @@ gulp.task('serve', ['build'], function () {
         .pipe(webserver({
             port: '9090',
             livereload: true,
-            directoryListing: {
-                enable: true,
-                path: 'build'
-            },
             open: true
         })
     );
@@ -127,8 +107,8 @@ gulp.task('deploy', ['build'], function () {
     return gulp.src('build/**')
         .pipe(rsync({
             root: 'build/',
-            hostname: 'siennasg@siennasguidetomusic.com',
-            destination: 'public_html/musiccrashcourses'
+            hostname: 'siennamw@abyss.dreamhost.com',
+            destination: 'c2m2.org'
         })
     );
 });

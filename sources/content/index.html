@@ -1,40 +1,31 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
-<div class="stripe">Lessons and Resources for Beginners and Musicians of All Kinds</div>
-<!--
-    <h1>Courses</h1>
-    <p>A course is a group of lessons organized around a theme. </p>
-    <p class="placeholder">Please see the navigation menu above for a complete list of courses.</p>
-    <div id="courses_list"></div>
-    -->
-<h1>Lessons</h1>
-<p class="placeholder">Please see the navigation menu above for a complete list of lessons.</p>
+<h2>About C2M2</h2>
+<p>Welcome to Collections of Cinema and Media Music, or <b>C2M2</b>, a guide to
+    library collections of film and media music. C2M2 is currently in development
+    and we welcome
+    <a href="/suggest.html">suggestions for resources to be included in the
+        database</a>.
+    You may also <a href="/contact.html">contact us with general questions or
+        comments</a> or <a href="/vision.html">read more about our plans for C2M2</a>.</p>
+
+<h2>Contributors</h2>
 <div class="row">
-    <div class="six columns" id="lessons_list1"></div>
-    <div class="six columns" id="lessons_list2"></div>
-    <div class="clearfix"></div>
+    <div class="six columns">
+        <h3>Michael W. Harris, Ph.D.</h3>
+        <p>Michael is a librarian, archivist, and musicologist. C2M2 is Michael's
+            brainchild. For more about Michael,
+            <a href="http://www.michaelwharris.net/" target="new">visit his
+                website</a>
+            or <a href="http://www.thetemptrack.com" target="new">his blog</a>.
+        </p>
+    </div>
+    <div class="six columns">
+        <h3>Sienna M. Wood, Ph.D.</h3>
+        <p>Sienna is a musicologist and a web developer. She built this website. For
+            more about Sienna,
+            <a href="http://www.siennamwood.com" target="new">visit her website</a>.
+        </p>
+    </div>
 </div>
-<h1>Resources</h1>
-<div class="pic fltrt"><a class="hide_when_narrow noprint" href="resources/help.html"><img
-    src="/images/other/question_mark.png" alt="question mark" width="150"/></a></div>
-<p class="placeholder">Please see the navigation menu above for a complete list of resources.</p>
-<div id="resources_list"></div>
-<script>
-    // Copy links from navigation as content of page
-
-    //clonelist("#courses", "#courses_list");
-    clonelist("#pitch", "#lessons_list1");
-    clonelist("#time", "#lessons_list2");
-    clonelist("#form", "#lessons_list2");
-    clonelist("#genre", "#lessons_list2");
-    clonelist("#exp", "#lessons_list2");
-    clonelist("#inst", "#lessons_list2");
-    clonelist("#advanced", "#lessons_list2");
-    clonelist("#resources", "#resources_list");
-
-    // Hide .placeholder items
-    $(document).find("p.placeholder").each(function () {
-        $(this).addClass("hide_me");
-    })
-</script>
 {% endblock %}

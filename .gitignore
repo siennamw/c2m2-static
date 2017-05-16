@@ -1,11 +1,10 @@
 node_modules
 
 # Compiled CSS in sources
-sources/css/mcc_styles.css
-sources/css/sienna-boilerplate.css
+sources/css/style.css
 
 # Collected and compiled files in build
 build/*
 
 # PHP file with security information
-sources/php/mail.php
+sources/php/*.php

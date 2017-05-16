@@ -1,72 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-
-    <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <meta name="description"
-          content="Self-paced lessons for beginners and musicians of all kinds - learn to read music, improve your
-          music theory skills, understand musical instrument families, and more..."/>
-    <meta name="keywords"
-          content="music, basics, learn, music theory, theory, scale, key, chord, western, reading music, how to read
-          music, sienna, sienna's guide to music, sienna wood, sienna m. wood, guide to music, lesson, course,
-          self-paced, reference, glossary"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- TODO: allow page title to change on individual pages -->
-    <title>Music Crash Courses</title>
+    <title>C2M2</title>
 
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/images/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="/images/layout/favicons/favicon.ico" type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="/images/layout/favicons/apple-touch-icon.png"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/layout/favicons/apple-touch-icon-57x57.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/layout/favicons/apple-touch-icon-72x72.png"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/layout/favicons/apple-touch-icon-76x76.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/layout/favicons/apple-touch-icon-114x114.png"/>
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/layout/favicons/apple-touch-icon-120x120.png"/>
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/layout/favicons/apple-touch-icon-144x144.png"/>
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/layout/favicons/apple-touch-icon-152x152.png"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/layout/favicons/apple-touch-icon-180x180.png"/>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/mcc_styles.css">
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- JavaScript -->
-    <!-- jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="http://malsup.github.io/jquery.cycle2.js"></script>
-    <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
-    <!-- MathJax -->
-    <script type="text/javascript" async
-            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    <!-- Verovio -->
-    <script src="http://www.verovio.org/javascript/latest/verovio-toolkit.js"></script>
-    <!-- Boilerplate -->
+    <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+    <script src="/js/jquery.min.js"></script>
     <script src="/js/sienna-boilerplate.js"></script>
-    <!-- MCC -->
-    <script src="/js/mcc_scripts.js"></script>
-
-    <!-- TODO: allow page-specific head material -->
-    <!-- Page-Specific Head Material -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
 </head>
+
 <body>
 <div class="container">
-
-    <!-- Header and Navigation -->
+<!-- Header and Navigation -->
     {% include "partials/header.nunjucks" %}
 
     <!-- Content -->
-    <div id="main_content" class="row">
+    <main>
         {% block content %}
         {% endblock %}
-    </div><!-- end #main_content -->
+    </main><!-- end main -->
 
     <!-- Footer -->
     {% include "partials/footer.nunjucks" %}

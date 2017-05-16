@@ -1,0 +1,25 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+<h2>Advanced Search</h2>
+<p>This form is not yet functional.</p>
+<form class="advanced-search">
+	<label for="keywords">Keywords</label><input type="text" id="keywords" name="keywords"/>
+	<label for="composer">Composer</label><input type="text" id="composer" name="composer"/>
+	<label for="film-title">Film Title</label><input type="text" id="film-title" name="film-title"/>
+	<label for="director">Director</label><input type="text" id="director" name="director"/>
+	<label>Date Range</label>
+	<div class="row">
+		<div class="six columns">
+			<label for="min-date">From</label>
+			<input type="number" id="min-date" name="min-date" min="1900" max="9999" value="1900"/>
+		</div>
+		<div class="six columns">
+			<label for="max-date">To</label>
+			<input type="number" id="max-date" name="max-date" min="1900" max="9999"/>
+		</div>
+	</div>
+	<label for="production-co">Production Company</label><input type="text" id="production-co" name="production-co"/>
+	<label for="country">Country</label><input type="text" id="country" name="country"/>
+	<input class="button-primary" type="submit" value="Submit"/>
+</form>
+{% endblock %}

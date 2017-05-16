@@ -1,10 +1,10 @@
 {
-  "name": "music-crash-courses",
-  "description": "Music Crash Courses <http://www.musiccrashcourses.com/>",
+  "name": "c2m2-static",
+  "description": "C2M2 <http://www.c2m2.org/>",
   "version": "0.0.2",
   "author": "Sienna M. Wood <sienna.m.wood@gmail.com>",
   "license": "GPL-3.0",
-  "repository": "https://github.com/siennamw/music-crash-courses.git",
+  "repository": "https://github.com/siennamw/c2m2-static.git",
   "devDependencies": {
     "del": "^2.2.1",
     "gulp": "^3.9.1",
@@ -14,7 +14,5 @@
     "gulp-rsync": "0.0.6",
     "gulp-webserver": "^0.9.1"
   },
-  "dependencies": {
-    "font-awesome": "^4.6.3"
-  }
+  "dependencies": {}
 }

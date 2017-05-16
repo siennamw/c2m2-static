@@ -1,2 +1,2 @@
-# music-crash-courses
-Source files for [Music Crash Courses](http://www.musiccrashcourses.com)
+# c2m2-static
+Static website source files for [C2M2](http://www.c2m2.org).

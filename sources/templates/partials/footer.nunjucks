@@ -1,37 +1,7 @@
-<footer class="row">
-    <div class="three columns">
-        <h1><a href="/resources/glossary.html">Music Notation Glossary</a></h1>
-        <p>This <a href="/resources/glossary.html">visual glossary</a> is a great resource for learning to read music.
-        </p>
-    </div>
-    <div class="six columns">
-        <h1><a href="http://www.themeandvariations.org/" target="_blank">Companion Website</a></h1>
-        <p><a href="/">Music Crash Courses</a> is the new home of the music theory pages from <a
-            href="http://www.themeandvariations.org/" target="_blank">Theme &amp; Variations: New Perspectives in Music
-            History</a>. Visit <a href="http://www.themeandvariations.org/" target="_blank">Theme &amp; Variations</a>
-            to explore the history of western music!</p>
-    </div>
-    <div class="three columns">
-        <h1><a href="/contact.html">Contact</a></h1>
-        <p>If you're enjoying this site, if you find an error, or if you want more, <a href="/contact.html">let us
-            know</a>!</p>
-    </div>
+<footer>
+    <p>Copyright &copy;
+        <a href="http://www.michaelwharris.net/" target="new">Michael W.
+            Harris</a>
+        and <a href="http://www.siennamwood.com" target="new">Sienna M. Wood</a>,
+        2017</p>
 </footer>
-<div id="attr" class="row">
-    <div id="marquee_placeholder">
-        <p><i>"Music is nothing else but wild sounds civilized into time and tune."</i> - Thomas Fuller</p>
-    </div>
-    <div id="marquee" class="cycle-slideshow hide_me" data-cycle-fx="fade" data-cycle-timeout="10000"
-         data-cycle-center-horz=true data-cycle-random=true data-cycle-slides="> p">
-        <p><i>"After silence, that which comes nearest to expressing the inexpressible is music."</i> - Aldous Huxley
-        </p>
-        <p><i>"Music in the soul can be heard by the universe."</i> - Lao Tzu</p>
-        <p><i>"Music is a higher revelation than all wisdom and philosophy."</i> - Ludwig van Beethoven</p>
-        <p><i>"Music is the movement of sound to reach the soul for the education of its virtue."</i> - Plato</p>
-        <p><i>"Music expresses that which cannot be said and on which it is impossible to be silent."</i> - Victor Hugo
-        </p>
-        <p><i>"Music is nothing else but wild sounds civilized into time and tune."</i> - Thomas Fuller</p>
-    </div>
-    <p><a href="http://www.siennamwood.com/" target="_blank">Copyright &copy; Sienna M. Wood, 2015-2016</a></p>
-    <p class="forprint"><a href="/">www.MusicCrashCourses.com</a></p>
-</div>

@@ -5,7 +5,7 @@
     unavailable.</b></p>
 <ul class="disc">
     <li>If you typed in the URL, please check the spelling</li>
-    <li>You can click the 'Back' button and try another link, or <a href="http://www.musiccrashcourses.com/">click
+    <li>You can click the 'Back' button and try another link, or <a href="http://www.c2m2.org/">click
         here to return to the home page.</a></li>
 </ul>
 {% endblock %}

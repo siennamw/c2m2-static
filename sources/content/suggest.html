@@ -1,0 +1,22 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+<h2>Suggest a Resource</h2>
+<form class="resource-suggest" method="post" action="/php/suggest.php">
+	<label for="rs_name">Your Name *</label>
+	<input type="text" id="rs_name" name="rs_name" required />
+	<label for="rs_email">Your Email *</label>
+	<input type="email" id="rs_email" name="rs_email" required />
+	<label for="rs_composer">Composer(s) Concerned</label>
+	<input type="text" id="rs_composer" name="rs_composer" />
+	<label for="rs_works">Major Work(s) and/or Film(s) Concerned</label>
+	<input type="text" id="rs_works" name="rs_works" />
+	<label for="rs_link">Link to Resource</label>
+	<input type="url" id="rs_link" name="rs_link" />
+	<label for="rs_location">Location (name of library, repository, database...)</label>
+	<input type="text" id="rs_location" name="rs_location" />
+	<label for="rs_comments">Comments</label>
+	<textarea id="rs_comments" name="rs_comments" cols="40" rows="100"></textarea>
+	<div class="g-recaptcha" data-sitekey="6LfFqSAUAAAAAAgzNW9BgPfnmPzwXXJvcKDbqXRT"></div>
+	<input class="button-primary" type="submit" value="Submit" />
+</form>
+{% endblock %}
