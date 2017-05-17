@@ -3,12 +3,12 @@
 <h2>Contact Us</h2>
 <form class="contact" method="post" action="/php/contact.php">
 	<label for="contact_name">Your Name *</label>
-	<input type="text" id="contact_name" name="contact_name" required />
+	<input type="text" id="contact_name" name="contact_name" class="u-full-width" tabindex="1" required />
 	<label for="contact_email">Your Email *</label>
-	<input type="email" id="contact_email" name="contact_email" required />
+	<input type="email" id="contact_email" name="contact_email" class="u-full-width" tabindex="2" required />
 	<label for="contact_message">Message</label>
-	<textarea id="contact_message" name="contact_message" cols="40" rows="100"></textarea>
+	<textarea id="contact_message" name="contact_message" cols="40" rows="100" class="u-full-width" tabindex="3"></textarea>
 	<div class="g-recaptcha" data-sitekey="6LfFqSAUAAAAAAgzNW9BgPfnmPzwXXJvcKDbqXRT"></div>
-	<input class="button-primary" type="submit" value="Submit" />
+	<input class="button-primary" type="submit" value="Submit" tabindex="4" />
 </form>
 {% endblock %}

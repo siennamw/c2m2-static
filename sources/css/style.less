@@ -32,14 +32,14 @@ p.caption {
 }
 
 form {
-  input, textarea {
-    width: 100%;
-  }
-
-  .button-primary {
+  input[type='submit'] {
     display: block;
     margin: 2.5rem auto;
     width: 60%;
+
+    &.button-primary:focus, &.button-primary:hover {
+      background-color: darken(@primary, 10%);
+    }
   }
 
   .g-recaptcha > div {

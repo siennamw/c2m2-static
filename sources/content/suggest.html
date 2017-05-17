@@ -3,20 +3,20 @@
 <h2>Suggest a Resource</h2>
 <form class="resource-suggest" method="post" action="/php/suggest.php">
 	<label for="rs_name">Your Name *</label>
-	<input type="text" id="rs_name" name="rs_name" required />
+	<input type="text" id="rs_name" name="rs_name" class="u-full-width" tabindex="1" required />
 	<label for="rs_email">Your Email *</label>
-	<input type="email" id="rs_email" name="rs_email" required />
+	<input type="email" id="rs_email" name="rs_email" class="u-full-width" tabindex="2" required />
 	<label for="rs_composer">Composer(s) Concerned</label>
-	<input type="text" id="rs_composer" name="rs_composer" />
+	<input type="text" id="rs_composer" name="rs_composer" class="u-full-width" tabindex="3" />
 	<label for="rs_works">Major Work(s) and/or Film(s) Concerned</label>
-	<input type="text" id="rs_works" name="rs_works" />
+	<input type="text" id="rs_works" name="rs_works" class="u-full-width" tabindex="4" />
 	<label for="rs_link">Link to Resource</label>
-	<input type="url" id="rs_link" name="rs_link" />
+	<input type="url" id="rs_link" name="rs_link" class="u-full-width" tabindex="5" />
 	<label for="rs_location">Location (name of library, repository, database...)</label>
-	<input type="text" id="rs_location" name="rs_location" />
+	<input type="text" id="rs_location" name="rs_location" class="u-full-width" tabindex="6" />
 	<label for="rs_comments">Comments</label>
-	<textarea id="rs_comments" name="rs_comments" cols="40" rows="100"></textarea>
+	<textarea id="rs_comments" name="rs_comments" cols="40" rows="100" class="u-full-width" tabindex="7"></textarea>
 	<div class="g-recaptcha" data-sitekey="6LfFqSAUAAAAAAgzNW9BgPfnmPzwXXJvcKDbqXRT"></div>
-	<input class="button-primary" type="submit" value="Submit" />
+	<input class="button-primary" type="submit" value="Submit" tabindex="8" />
 </form>
 {% endblock %}
